@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preload" as="image" href="bg.jpg">
+    <title>特別なんちゃら施設 あいのかぜ</title>
+</head>
+<body>
+    <header id="header">
+        <a href="#about"><img src="あいのかぜ.png" alt="あいのかぜ"></a>
+        <div id="header_contact">
+            <a href="">お問い合わせはこちら!</a>
+        </div>
+        <div id="menu_btn" onclick="open_menu()">メニュー</div>
+    </header>
+    <nav id="navigation">
+        <div id="header_buttons">
+            <a href="#about" onclick="abort_overlay()">ご挨拶</a>
+            <a href="#service" onclick="abort_overlay()">施設概要</a>
+            <a href="#photos" onclick="abort_overlay()">施設の写真</a>
+            <a href="#access" onclick="abort_overlay()">アクセス</a>
+            <a href="#company" onclick="abort_overlay()">運営会社</a>
+        </div>
+    </nav>
+    <main>
+        <div id="overlay"></div>
+        <section id="about">
+            <h1>ご挨拶</h1>
+            <h2>私たちの心得</h2>
+            <p class="font-bold font-big">
+                わたしたちは、利用者様<wbr>ひとりひとりの<wbr>生活をより豊かにし、
+                <wbr>一瞬一瞬を<wbr>楽しんで<wbr>いただける<wbr>ような<wbr>環境を<wbr>提供します。
+            </p>
+            <p>
+                この度は、数ある<wbr>支援施設のなかで、
+                <wbr>弊社を<wbr>ご検討いただき<wbr>
+                誠にありがとうございます。
+            </p>
+            <p>
+                わたしたちは、<wbr>利用者様が<wbr>どのように感じ、
+                <wbr>どのように考え、<wbr>なにを幸せと<wbr>感じるのかを
+                <wbr>常に<wbr>追求してまいります。
+            </p>
+        </section>
+
+        <section id="service">
+            <h1>サービスについて</h1>
+            <div>
+                <h1>制作中</h1>
+            </div>
+        </section>
+
+        <section id="photos">
+            <h1>施設の写真</h1>
+            <div>
+                <h1>制作中</h1>
+            </div>
+        </section>
+
+        <section id="access">
+            <h1>施設までのアクセス</h1>
+            <h2>施設所在地</h2>
+            <p>大阪府羽曳野市 羽曳が丘西 6-12-22</p>
+            <h2>詳細な地図</h2>
+            <p>Google Map</p>
+            <iframe id="google_map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3367.8176880283127!2d135.58268315202116!3d34.542761538717684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000d7f53f4116e7%3A0x2132c142961ff351!2z44CSNTgzLTA4NjUg5aSn6Ziq5bqc57695puz6YeO5biC57695puz44GM5LiY6KW_77yW5LiB55uu77yR77yS4oiS77yS77yS!5e1!3m2!1sja!2sjp!4v1760545519513!5m2!1sja!2sjp" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        <section id="company">
+            <h1>運営会社概要</h1>
+            <div class="content_item">
+                <h2>株式会社 あいのかぜ</h2>
+                <p><span class="font-bold">住所:</span>大阪府羽曳野市 西浦 5-414-19</p>
+                <p><span class="font-bold">電話番号:</span>072-957-0001</p>
+            </div>
+            <div class="content_item">
+                <h3>役員紹介</h3>
+                <p><span class="font-bold">代表取締役社長</span> 大西 孝枝</p>
+                <p><span class="font-bold">代表取締役</span> 田中 光史</p>
+            </div>
+            <div class="content_item">
+                <h3>会社概要</h3>
+                <p><span class="font-bold">従業員数:</span>10人(世話人含)</p>
+                <p><span class="font-bold">創業:</span>2025年7月7日</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
