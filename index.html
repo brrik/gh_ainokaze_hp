@@ -4,15 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
     <link rel="preload" as="image" href="./bg.jpg">
     <title>特別なんちゃら施設 あいのかぜ</title>
 </head>
 <body>
     <header id="header">
         <a href="#about"><img src="./icon.png" alt="あいのかぜ"></a>
-        <div id="header_contact">
-            <a href="">お問い合わせはこちら!</a>
-        </div>
         <div id="menu_btn" onclick="open_menu()">メニュー</div>
     </header>
     <nav id="navigation">
@@ -22,26 +20,24 @@
             <a href="#photos" onclick="abort_overlay()">施設の写真</a>
             <a href="#access" onclick="abort_overlay()">アクセス</a>
             <a href="#company" onclick="abort_overlay()">運営会社</a>
+            <a href="" onclick="abort_overlay()">お問い合わせはこちら!</a>
         </div>
     </nav>
     <main>
         <div id="overlay"></div>
         <section id="about">
             <h1>ご挨拶</h1>
+            <img src="img1.png" alt="わたしたちの理念">
             <h2>私たちの心得</h2>
             <p class="font-bold font-big">
-                わたしたちは、利用者様<wbr>ひとりひとりの<wbr>生活をより豊かにし、
+                わたしたちは、利用者様<wbr>ひとりひとりの<wbr>生活をより豊かにし、<br>
                 <wbr>一瞬一瞬を<wbr>楽しんで<wbr>いただける<wbr>ような<wbr>環境を<wbr>提供します。
             </p>
             <p>
-                この度は、数ある<wbr>支援施設のなかで、
-                <wbr>弊社を<wbr>ご検討いただき<wbr>
-                誠にありがとうございます。
+                この度は、数ある<wbr>支援施設のなかで、<br>弊社を<wbr>ご検討いただき<wbr>誠にありがとうございます。
             </p>
             <p>
-                わたしたちは、<wbr>利用者様が<wbr>どのように感じ、
-                <wbr>どのように考え、<wbr>なにを幸せと<wbr>感じるのかを
-                <wbr>常に<wbr>追求してまいります。
+                わたしたちは、<wbr>利用者様が<wbr>どのように感じ、<br>どのように考え、<wbr>なにを幸せと<wbr>感じるのかを<wbr>常に<wbr>追求してまいります。
             </p>
         </section>
 
@@ -49,6 +45,22 @@
             <h1>サービスについて</h1>
             <div>
                 <h1>制作中</h1>
+                <h2>ご提供サービス</h2>
+                <div class="sub_content cont_left">
+                    <ul>
+                        <li>食事提供：朝夕 2食</li>
+                        <li>個室提供：あり</li>
+                        <li>照明設備完備</li>
+                        <li>インターネット環境完備</li>
+                        <li>空調設備完備</li>
+                        <li>夜間スタッフ常駐</li>
+                    </ul>
+                </div>
+                <h2>1日の流れ</h2>
+                <h3>平日の場合</h3>
+                <div class="sub_content cont_cent">
+                    <img src="schedule_chart_ex.png" alt="">
+                </div>
             </div>
         </section>
 
@@ -71,18 +83,24 @@
             <h1>運営会社概要</h1>
             <div class="content_item">
                 <h2>株式会社 あいのかぜ</h2>
-                <p><span class="font-bold">住所:</span>大阪府羽曳野市 西浦 5-414-19</p>
-                <p><span class="font-bold">電話番号:</span>072-957-0001</p>
+                <div class="sub_content cont_left">
+                    <p><span class="font-bold">住所:</span>大阪府羽曳野市 西浦 5-414-19</p>
+                    <p><span class="font-bold">電話番号:</span>072-957-0001</p>
+                </div>
             </div>
             <div class="content_item">
                 <h3>役員紹介</h3>
-                <p><span class="font-bold">代表取締役社長</span> 大西 孝枝</p>
-                <p><span class="font-bold">代表取締役</span> 田中 光史</p>
+                <div class="sub_content cont_left">
+                    <p><span class="font-bold">代表取締役社長</span> 大西 孝枝</p>
+                    <p><span class="font-bold">代表取締役</span> 田中 光史</p>
+                </div>
             </div>
             <div class="content_item">
                 <h3>会社概要</h3>
-                <p><span class="font-bold">従業員数:</span>10人(世話人含)</p>
-                <p><span class="font-bold">創業:</span>2025年7月7日</p>
+                <div class="sub_content cont_left">
+                    <p><span class="font-bold">従業員数:</span>10人(世話人含)</p>
+                    <p><span class="font-bold">創業:</span>2025年7月7日</p>
+                </div>
             </div>
         </section>
     </main>

@@ -1,3 +1,6 @@
+/* Google font Icon */
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+
 html{
     outline: solid 1px black;
     font-size: 16px;
@@ -27,6 +30,10 @@ body::before {
     z-index: -1; /* 背景より上、コンテンツより下 */
 }
 
+img{
+    width: 80%;
+}
+
 p{
     word-break: keep-all;
 }
@@ -34,11 +41,24 @@ p{
 main{
     padding-top: 10vh;
 }
+ul{
+    list-style-type: none;
+}
+li{
+    font-size: 1.2rem;
+}
+li:before{
+    font-family: "Material Icons";
+    content: "\e5e1";
+}
 
 section{
     margin:30px;
     background-color: rgba(255, 255, 255, 0.6);
     border: solid 2px gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .font-bold{
@@ -47,6 +67,27 @@ section{
 
 .font-big{
     font-size: 1.2rem;
+}
+
+.sub_content{
+    width: fit-content;
+    text-align: left;
+    margin: 0 auto;
+}
+
+.cont_left{
+    text-align: left;
+}
+
+.cont_cent{
+    text-align: center;
+}
+
+.sub_content img{
+    display: block;
+
+    width: 30%;
+    margin: auto;
 }
 
 #header{
@@ -59,12 +100,13 @@ section{
     align-items: center;
     justify-content: space-between;
     height: 10vh;
-    background-color: rgba(95, 185, 160, 0.8);
+    background-color: rgba(240, 255, 240,1);
     z-index: 1000;
 }
 
 #header img{
-    height: 8vh;
+    width: auto;
+    height: 6vh;
 }
 
 
@@ -167,6 +209,9 @@ section{
 }
 
 @media (min-width: 800px) {
+    img{
+        width: 60%;
+    }
     #header_buttons a{
         font-size: 1.2rem;
     }
