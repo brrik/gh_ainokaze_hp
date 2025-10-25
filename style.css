@@ -85,8 +85,7 @@ section{
 
 .sub_content img{
     display: block;
-
-    width: 30%;
+    width: 80%;
     margin: auto;
 }
 
@@ -211,6 +210,9 @@ section{
 @media (min-width: 800px) {
     img{
         width: 60%;
+    }
+    .sub_content img{
+        width: 30%;
     }
     #header_buttons a{
         font-size: 1.2rem;
