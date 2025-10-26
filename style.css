@@ -13,6 +13,10 @@ body{
     text-align: center;
 }
 
+p, li, h1, h2, h3{
+    word-break: keep-all;
+    overflow-wrap: normal;
+}
 
 .bg-fixed{
     position: fixed;
@@ -52,9 +56,10 @@ ul{
     list-style-type: none;
 }
 li{
+    margin-top: 10px;
     font-size: 1.2rem;
 }
-li:before{
+ul li:before{
     font-family: "Material Icons";
     content: "\e5e1";
 }
