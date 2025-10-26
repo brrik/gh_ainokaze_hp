@@ -70,6 +70,8 @@ td{
 
 section{
     margin:30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     background-color: rgba(255, 255, 255, 0.6);
     border: solid 2px gray;
     display: flex;
@@ -109,6 +111,13 @@ section{
     vertical-align: top;
 }
 
+#top_menu_section{
+    display: none;
+}
+
+#top_menu{
+    display:none;
+}
 
 #header{
     position: fixed;
@@ -152,33 +161,6 @@ section{
                 transform 0.5s ease-in-out;
 }
 
-#top_menu{
-    display: flex;
-}
-
-#top_menu a{
-    display: inline-block;
-    text-decoration: none;
-    margin: 10px;
-    padding: 10px;
-    color:black;
-    cursor: pointer;
-    background-color: yellow;
-    border-radius: 10px;
-    box-shadow: 3px 3px 8px rgba(30, 30, 30, 0.3);
-    transform: translateY(0);
-    transition: background-color 0.5s ease-in-out, 
-                color 0.5s ease-in-out, 
-                box-shadow 0.5s ease-in-out,
-                transform 0.5s ease-in-out;
-}
-
-#top_menu a:hover{
-    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.4);
-    transform: translateY(3px);
-    background-color: orangered;
-    color: white;
-}
 
 #header_buttons a:hover{
     box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.4);
@@ -258,7 +240,7 @@ section{
 
 
 .slide_container{
-    width: 700px;
+    width: 80%;
     display: flex;
     align-items: center;
     height: 340px;
@@ -309,6 +291,38 @@ section{
     }
     .font-big{
         font-size: 1.5rem;
+    }
+
+    #top_menu_section{
+        display: flex;
+    }
+
+    #top_menu{
+        display: flex;
+    }
+
+    #top_menu a{
+        display: inline-block;
+        text-decoration: none;
+        margin: 10px;
+        padding: 10px;
+        color:black;
+        cursor: pointer;
+        background-color: yellow;
+        border-radius: 10px;
+        box-shadow: 3px 3px 8px rgba(30, 30, 30, 0.3);
+        transform: translateY(0);
+        transition: background-color 0.5s ease-in-out, 
+                    color 0.5s ease-in-out, 
+                    box-shadow 0.5s ease-in-out,
+                    transform 0.5s ease-in-out;
+    }
+
+    #top_menu a:hover{
+        box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.4);
+        transform: translateY(3px);
+        background-color: orangered;
+        color: white;
     }
 
 
