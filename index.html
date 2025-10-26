@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
-    <link rel="preload" as="image" href="./bg.jpg">
+    <link rel="preload" as="image" href="./img/bg.jpg">
     <title>特別なんちゃら施設 あいのかぜ</title>
 </head>
 <body>
     <header id="header">
-        <a href="#about"><img src="./icon.png" alt="あいのかぜ"></a>
+        <a href="#about"><img src="./img/icon.png" alt="あいのかぜ"></a>
         <div id="menu_btn" onclick="open_menu()">メニュー</div>
     </header>
     <nav id="navigation">
@@ -21,14 +21,25 @@
             <a href="#photos" onclick="abort_overlay()">施設の写真</a>
             <a href="#access" onclick="abort_overlay()">アクセス</a>
             <a href="#company" onclick="abort_overlay()">運営会社</a>
-            <a href="" onclick="abort_overlay()">お問い合わせはこちら!</a>
+            <a href="#contact" onclick="abort_overlay()">お問い合わせはこちら!</a>
         </div>
     </nav>
     <main>
         <div id="overlay"></div>
+        <section>
+            <div id="top_menu">
+                <a class="menu_buttons" href="#about" onclick="abort_overlay()">ご挨拶</a>
+                <a class="menu_buttons" href="#service" onclick="abort_overlay()">施設概要</a>
+                <a class="menu_buttons" href="#prices" onclick="abort_overlay()">ご利用料金</a>
+                <a class="menu_buttons" href="#photos" onclick="abort_overlay()">施設の写真</a>
+                <a class="menu_buttons" href="#access" onclick="abort_overlay()">アクセス</a>
+                <a class="menu_buttons" href="#company" onclick="abort_overlay()">運営会社</a>
+                <a class="menu_buttons" href="#contact" onclick="abort_overlay()">お問い合わせはこちら!</a>
+            </div>
+        </section>
         <section id="about">
             <h1>ご挨拶</h1>
-            <img src="img1.png" alt="わたしたちの理念">
+            <img src="./img/img1.png" alt="わたしたちの理念">
             <h2>私たちの心得</h2>
             <p class="font-bold font-big">
                 わたしたちは、利用者様<wbr>ひとりひとりの<wbr>生活をより豊かにし、<br>
@@ -60,7 +71,7 @@
                 <h2>1日の流れ</h2>
                 <h3>平日の場合</h3>
                 <div class="sub_content cont_cent">
-                    <img src="schedule_chart_ex.png" alt="">
+                    <img src="./img/timeline.png" alt="">
                 </div>
             </div>
         </section>
@@ -100,8 +111,54 @@
 
         <section id="photos">
             <h1>施設の写真</h1>
+            <h2>外観</h2>
             <div>
-                <h1>制作中</h1>
+                <img class="slide" src="./img//img_out_1.JPG" alt="">
+            </div>
+            <h2>共用部</h2>
+            <div class="slide_container">
+                <div class="slide_wrapper">
+                    <img class="slide" src="./img/img_com_1.JPG" alt="">
+                    <img class="slide" src="./img/img_com_2.JPG" alt="">
+                    <img class="slide" src="./img/img_com_3.JPG" alt="">
+                    <img class="slide" src="./img/img_com_4.JPG" alt="">
+                    <img class="slide" src="./img/img_com_5.JPG" alt="">
+                </div>
+                <div class="slide_wrapper">
+                    <img class="slide" src="./img/img_com_1.JPG" alt="">
+                    <img class="slide" src="./img/img_com_2.JPG" alt="">
+                    <img class="slide" src="./img/img_com_3.JPG" alt="">
+                    <img class="slide" src="./img/img_com_4.JPG" alt="">
+                    <img class="slide" src="./img/img_com_5.JPG" alt="">
+                </div>
+                <div class="slide_wrapper">
+                    <img class="slide" src="./img/img_com_1.JPG" alt="">
+                    <img class="slide" src="./img/img_com_2.JPG" alt="">
+                    <img class="slide" src="./img/img_com_3.JPG" alt="">
+                    <img class="slide" src="./img/img_com_4.JPG" alt="">
+                    <img class="slide" src="./img/img_com_5.JPG" alt="">
+                </div>
+            </div>
+            <h2>個室</h2>
+            <div class="slide_container">
+                <div class="slide_wrapper">
+                    <img class="slide" src="./img/img_pri_1.JPG" alt="">
+                    <img class="slide" src="./img/img_pri_2.JPG" alt="">
+                    <img class="slide" src="./img/img_pri_3.JPG" alt="">
+                    <img class="slide" src="./img/img_pri_4.JPG" alt="">
+                </div>
+                <div class="slide_wrapper">
+                    <img class="slide" src="./img/img_pri_1.JPG" alt="">
+                    <img class="slide" src="./img/img_pri_2.JPG" alt="">
+                    <img class="slide" src="./img/img_pri_3.JPG" alt="">
+                    <img class="slide" src="./img/img_pri_4.JPG" alt="">
+                </div>
+                <div class="slide_wrapper">
+                    <img class="slide" src="./img/img_pri_1.JPG" alt="">
+                    <img class="slide" src="./img/img_pri_2.JPG" alt="">
+                    <img class="slide" src="./img/img_pri_3.JPG" alt="">
+                    <img class="slide" src="./img/img_pri_4.JPG" alt="">
+                </div>
             </div>
         </section>
 
@@ -135,6 +192,16 @@
                     <p><span class="font-bold">従業員数:</span>10人(世話人含)</p>
                     <p><span class="font-bold">創業:</span>2025年7月7日</p>
                 </div>
+            </div>
+        </section>
+        <section id="contact">
+            <h1>お問い合わせ</h1>
+            <p><span class="font-big font-bold">体験入居やご入居</span>のご相談から、<br><span class="font-big font-bold">実際の生活のご不明点</span>まで、<br>お気軽にお問い合わせください！</p>
+            <div class="sub_contact cont_cent">
+                <p class="font-big font-bold"><img src="./img/call.png" alt=""><a href="tel:0729272330">072-927-2330</a><br>または <a href="tel:09082190677">090-8219-0677</a></p>
+            </div>
+            <div class="sub_contact cont_cent">
+                <p class="font-big font-bold"><img src="./img/mail.png" alt=""><a href="mailto:gh.ainokaze@gmail.com?subject=【あいのかぜ】お問合せ&body=お問合せ内容をご記入ください。(例：体験入居希望・入居相談希望 など)">gh.ainokaze@gmail.com</a></p>
             </div>
         </section>
     </main>

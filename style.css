@@ -9,7 +9,7 @@ html{
 body{
     margin: 0;
     padding: 0;
-    background-image: url("bg.jpg");
+    background-image: url("./img/bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -152,6 +152,34 @@ section{
                 transform 0.5s ease-in-out;
 }
 
+#top_menu{
+    display: flex;
+}
+
+#top_menu a{
+    display: inline-block;
+    text-decoration: none;
+    margin: 10px;
+    padding: 10px;
+    color:black;
+    cursor: pointer;
+    background-color: yellow;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(30, 30, 30, 0.3);
+    transform: translateY(0);
+    transition: background-color 0.5s ease-in-out, 
+                color 0.5s ease-in-out, 
+                box-shadow 0.5s ease-in-out,
+                transform 0.5s ease-in-out;
+}
+
+#top_menu a:hover{
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.4);
+    transform: translateY(3px);
+    background-color: orangered;
+    color: white;
+}
+
 #header_buttons a:hover{
     box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.4);
     transform: translateY(3px);
@@ -228,12 +256,47 @@ section{
     width: 80%;
 }
 
+
+.slide_container{
+    width: 700px;
+    display: flex;
+    align-items: center;
+    height: 340px;
+    overflow: hidden;
+    clip-path: inset(0 round 0 50px 0 50px);
+}
+
+.slide_wrapper{
+    display: flex;
+    animation: slide-flow 30s infinite linear 1s both;
+}
+
+.slide{
+    width: 300px;
+    object-fit:cover;
+    border: 1px solid #ddd;
+}
+
+@keyframes slide-flow {
+    0% {transform: translateX(0);}
+    100% {transform: translateX(-100%);}
+}
+
+.sub_contact{
+    display: flex;
+}
+.sub_contact img{
+    width: 30px;
+    height: 30px;
+}
+
+
 @media (min-width: 800px) {
     img{
         width: 60%;
     }
     .sub_content img{
-        width: 30%;
+        width: 100%;
     }
     #header_buttons a{
         font-size: 1.2rem;
