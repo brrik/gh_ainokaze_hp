@@ -30,6 +30,22 @@ body::before {
     z-index: -1; /* 背景より上、コンテンツより下 */
 }
 
+.bg-fixed{
+    position: fixed;
+    inset: 0;
+    /* 高さは動的Viewportに合わせると安定 */
+    height: 100dvh; /* 代替: 100svh/100lvh も検討 */
+    z-index: -1;
+    background: url('bg.jpg') center/cover no-repeat;
+    pointer-events: none; /* 背景をクリックさせない */
+}
+
+.content{
+    position: relative;
+    z-index: 0;
+    background: transparent;
+}
+
 img{
     width: 80%;
 }

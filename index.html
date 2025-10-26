@@ -9,23 +9,25 @@
     <title>障がい者グループホーム あいのかぜ</title>
 </head>
 <body>
-    <header id="header">
-        <a href="#about"><img src="./img/icon.png" alt="あいのかぜ"></a>
-        <div id="menu_btn" onclick="open_menu()">メニュー</div>
-    </header>
-    <nav id="navigation">
-        <div id="header_buttons">
-            <a href="#about" onclick="abort_overlay()">ご挨拶</a>
-            <a href="#service" onclick="abort_overlay()">施設概要</a>
-            <a href="#prices" onclick="abort_overlay()">ご利用料金</a>
-            <a href="#photos" onclick="abort_overlay()">施設の写真</a>
-            <a href="#access" onclick="abort_overlay()">アクセス</a>
-            <a href="#company" onclick="abort_overlay()">運営会社</a>
-            <a href="#contact" onclick="abort_overlay()">お問い合わせはこちら!</a>
-        </div>
-    </nav>
-    <main>
+    <div class="bg-fixed"></div>
+    <main class="content">
+        <header id="header">
+            <a href="#about"><img src="./img/icon.png" alt="あいのかぜ"></a>
+            <div id="menu_btn" onclick="open_menu()">メニュー</div>
+        </header>
+        <nav id="navigation">
+            <div id="header_buttons">
+                <a href="#about" onclick="abort_overlay()">ご挨拶</a>
+                <a href="#service" onclick="abort_overlay()">施設概要</a>
+                <a href="#prices" onclick="abort_overlay()">ご利用料金</a>
+                <a href="#photos" onclick="abort_overlay()">施設の写真</a>
+                <a href="#access" onclick="abort_overlay()">アクセス</a>
+                <a href="#company" onclick="abort_overlay()">運営会社</a>
+                <a href="#contact" onclick="abort_overlay()">お問い合わせはこちら!</a>
+            </div>
+        </nav>
         <div id="overlay"></div>
+
         <section id="top_menu_section">
             <div id="top_menu">
                 <a class="menu_buttons" href="#about" onclick="abort_overlay()">ご挨拶</a>
