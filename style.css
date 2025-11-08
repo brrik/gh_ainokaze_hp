@@ -24,7 +24,8 @@ p, li, h1, h2, h3{
     /* 高さは動的Viewportに合わせると安定 */
     height: 100dvh; /* 代替: 100svh/100lvh も検討 */
     z-index: -1;
-    background: url('./img/bg.jpg') center/cover no-repeat;
+    background:radial-gradient(circle, rgba(255, 255, 255, 0) 60%, rgba(255, 255, 255, 1) 100%),
+               url('./img/bg.jpg') center/cover no-repeat;
     pointer-events: none; /* 背景をクリックさせない */
 }
 
